@@ -6,4 +6,4 @@ This is a landing page built for a fake social network app that adds all social 
 - HTML
     - with FlexBox
 - SCSS/CSS
-- JS for a quick form validation
+- JS for a quick form validation.
