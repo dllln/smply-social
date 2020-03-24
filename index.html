@@ -9,23 +9,26 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="logo"><a href="#"></a><img src="/assets/logo.svg" alt="Simply Social main logo."></div>
-          <a href="#" class="toggle-button" onclick="myFunction(this)">
-            <span class="bar1"></span>
-            <span class="bar2"></span>
-            <span class="bar3"></span>
-            
-            </a>
-            <div class="nav-links">
-              <ul>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Tour</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Log In</a></li>
-              </ul>
-              </div>
-            </nav>
+        <div class="main_container">
+            <nav class="navbar">
+                <div class="logo"><a href="#"></a><img src="/assets/logo.svg" alt="Simply Social main logo."></div>
+              <a href="#" class="toggle-button" onclick="myFunction(this)">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+                <span class="bar3"></span>
+                
+                </a>
+                <div class="nav-links">
+                  <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#">Tour</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#" class="button_login">Log In</a></li>
+                  </ul>
+                  </div>
+                </nav>
+        </div>
+        
     </header>
 
     <section class="hero">
@@ -43,7 +46,7 @@
         </div>
     </section>
 
-    <section class="main_body">
+    <section class="main_body" id="features">
         <div class="main_container">
             <div class="row_1">
                 <div class="row_image">
@@ -100,5 +103,13 @@
             </div>
         </nav>
     </footer>
+
+    <script>
+        function myFunction(x) {
+        x.classList.toggle("change");
+      }
+      </script>
+
+      <script src="/styles/js/toggle_button.js"></script>
 </body>
 </html>
