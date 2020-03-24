@@ -1,1 +1,153 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #1C1C1C;
+  font-family: "Roboto", sans-serif;
+}
+
+li, a {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.main_container {
+  margin: 0 10%;
+}
+
+header {
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 60px;
+}
+
+header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 60px;
+}
+
+header .navbar .toggle-button {
+  position: absolute;
+  top: 4.25em;
+  right: 4em;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+header .navbar .toggle-button .bar1, header .navbar .toggle-button .bar2, header .navbar .toggle-button .bar3 {
+  height: 3px;
+  width: 100%;
+  background-color: #F03861;
+  border-radius: 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+header .navbar .change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+          transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+header .navbar .change .bar2 {
+  opacity: 0;
+}
+
+header .navbar .change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -4px);
+          transform: rotate(45deg) translate(-6px, -4px);
+}
+
+header .nav-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+header .nav-links li a {
+  padding: 1em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .nav-links li a:hover {
+  color: #F03861;
+  font-weight: 900;
+}
+
+header .nav-links a.button_login {
+  background-color: #F03861;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header .nav-links a.button_login:hover {
+  color: #fff;
+  font-weight: 900;
+  padding: 15px 25px;
+}
+
+@media (max-width: 675px) {
+  header .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  header .navbar .toggle-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .navbar .nav-links {
+    display: none;
+    width: 100%;
+  }
+  header .navbar .nav-links ul {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .navbar .nav-links ul li {
+    padding: 1em;
+  }
+  header .navbar .nav-links.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+}
+/*# sourceMappingURL=main.css.map */
