@@ -249,6 +249,7 @@ section.main_body {
         .row_image {
             img{
                 width: 100%;
+                z-index: 1;
             }
         }
 
@@ -267,10 +268,6 @@ section.main_body {
 
     @media (min-width: 768px) {
         margin-top: 140px;
-
-        img.wavy_blob {
-            margin-top: -700px;
-        }
 
         .row-1, .row-2{
             flex-direction: row;
@@ -306,14 +303,16 @@ section.main_body {
 
 img.wavy_blob {
     width: 100vw;
-    padding: 0;
-    margin: 0;
+    z-index: -1;
+
+    @media (min-width: 768px) {
+        margin-top: -200px;
+    }
 }
 
 section.testimonials {
     background-color: $litePink;
     margin-top: -4px;
-    width: 100%;
 
     .cards {
         padding: 100px 0;
@@ -323,7 +322,7 @@ section.testimonials {
          align-content: center;
 
         .card {
-            flex: 1 1 0px;
+            // flex: 1 1 0px;
             margin-top: 30px;
             background-color: #fff;
             padding: 40px;
@@ -343,6 +342,23 @@ section.testimonials {
                 }
             }
         }
+    }
+
+    @media (min-width: 768px) {
+
+        .cards {
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-content: center;
+
+            .card {
+                flex: 1 1 0px;
+                margin-right: 40px;
+            }
+
+        }
+
+
     }
 
 }
@@ -398,6 +414,7 @@ section.newsletter{
 
 footer {
     margin: 20px 0;
+    
     .nav-left{
         display: flex;
 
